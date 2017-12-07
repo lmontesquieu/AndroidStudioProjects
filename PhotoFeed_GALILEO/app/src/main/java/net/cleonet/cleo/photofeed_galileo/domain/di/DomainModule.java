@@ -3,6 +3,7 @@ package net.cleonet.cleo.photofeed_galileo.domain.di;
 import android.content.Context;
 import android.location.Geocoder;
 
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -21,9 +22,13 @@ import dagger.Provides;
 @Module
 public class DomainModule {
     String firebaseURL;
+    DatabaseReference mDatabase;
+    FirebaseAuth mAuth;
 
-    public DomainModule(String firebaseURL) {
+    public DomainModule(String firebaseURL, DatabaseReference mDatabase, FirebaseAuth mAuth) {
         this.firebaseURL = firebaseURL;
+        this.mDatabase = mDatabase;
+        this.mAuth = mAuth;
     }
 
     @Provides
@@ -31,14 +36,28 @@ public class DomainModule {
 //    FirebaseAPI providesFirebaseAPI(Firebase firebase){
     FirebaseAPI providesFirebaseAPI(){
         //return new FirebaseAPI(firebase);
-        return new FirebaseAPI();
+        //return new FirebaseAPI();
+        //return FirebaseAPI.getInstance();
+        return new FirebaseAPI(mAuth,mDatabase);
     }
 
 //    @Provides
 //    @Singleton
-//    Firebase providesFirebase(String firebaseURL){
-//    DatabaseReference providesFirebase(String firebaseURL){
-//        return new FirebaseDatabase();
+//    DatabaseReference providesFirebaseDatabase(FirebaseAPI firebaseAPI){
+//    //DatabaseReference providesFirebase(String firebaseURL){
+//        //return new FirebaseDatabase();
+//        //return FirebaseAPI.getInstance().getDataReference();
+//        //return new DatabaseReference();
+//        return firebaseAPI.getDataReference();
+//    }
+
+//    @Provides
+//    @Singleton
+//    FirebaseAuth providesFirebaseAuth(FirebaseAPI firebaseAPI){
+//        //DatabaseReference providesFirebase(String firebaseURL){
+//        //return new FirebaseDatabase();
+//        //return FirebaseAPI.getInstance().getMyAuth();
+//        return firebaseAPI.getMyAuth();
 //    }
 
     @Provides

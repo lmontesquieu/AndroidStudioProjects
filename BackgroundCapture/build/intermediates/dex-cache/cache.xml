@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/Pepe/AndroidStudioProjects/BackgroundCapture/Application/build/intermediates/exploded-aar/com.android.support/cardview-v7/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="4add8aa95c9f4e9a2ad64b7e2bf08e97e28955c1">
+        <dex dex="/Users/Pepe/AndroidStudioProjects/BackgroundCapture/Application/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-cardview-v7-24.1.1_c84a8ca783694b7efdc1d2a8911e0d0aa6cf74fb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Pepe/AndroidStudioProjects/BackgroundCapture/Application/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="f62e763609f65e47dc6c498760a4accf02776788">
+        <dex dex="/Users/Pepe/AndroidStudioProjects/BackgroundCapture/Application/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.1.1_3996ab4ba2e7c5a4f6ffd546807cef1b1e44c524/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Pepe/AndroidStudioProjects/BackgroundCapture/Application/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="4b1e164fddb84ee3d8d5824634602e696bed916b">
+        <dex dex="/Users/Pepe/AndroidStudioProjects/BackgroundCapture/Application/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_a434efece9900f290b2df34f37d6892fe22c5efd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Pepe/AndroidStudioProjects/BackgroundCapture/Application/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="ef0a966abaed4caacb29e466fe19f2109b0f07f8">
+        <dex dex="/Users/Pepe/AndroidStudioProjects/BackgroundCapture/Application/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_ae2b6a8f1ad5b58955972fdbf63a81963215ff12/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Pepe/AndroidStudioProjects/BackgroundCapture/Application/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="6d7d803871e3203465f71a163e7af104f807b446">
+        <dex dex="/Users/Pepe/AndroidStudioProjects/BackgroundCapture/Application/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.1.1_649c186c247ae3ae3fd353487eb8f4e42bdc54a9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Pepe/AndroidStudioProjects/Camera2Basic/Application/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="c936c1bd42f0c018c18920c7bec619ef056b24f8">
+        <dex dex="/Users/Pepe/AndroidStudioProjects/Camera2Basic/Application/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.1.1_e8bb214772a675ad890dbc467a9e076af4f388ab/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Pepe/AndroidStudioProjects/Camera2Basic/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="1256c10604bb098490eab070d76754ac5ceab35c">
+        <dex dex="/Users/Pepe/AndroidStudioProjects/Camera2Basic/Application/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.1.1_443b80fd0eaf1b5dbb0b53f4104c2d2dbde24279/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Pepe/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.1.1/support-annotations-24.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="3af19f153122737b372622fa6c81dd11a1c6b999">
+        <dex dex="/Users/Pepe/AndroidStudioProjects/Camera2Basic/Application/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.1.1_e4e27722a12ea6cc1e753fb55181fb1838e4b747/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Pepe/AndroidStudioProjects/Camera2Basic/Application/build/intermediates/exploded-aar/com.android.support/cardview-v7/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="4add8aa95c9f4e9a2ad64b7e2bf08e97e28955c1">
+        <dex dex="/Users/Pepe/AndroidStudioProjects/Camera2Basic/Application/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-cardview-v7-24.1.1_18f8f2bcd29325bd44690afa875be3ff7d913072/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Pepe/AndroidStudioProjects/Camera2Basic/Application/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="6d7d803871e3203465f71a163e7af104f807b446">
+        <dex dex="/Users/Pepe/AndroidStudioProjects/Camera2Basic/Application/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.1.1_01370986591a710f874f58c4c452d5d29e7d9d75/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Pepe/AndroidStudioProjects/Camera2Basic/Application/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="0dec1621bfda1a26595f3836489d15f0199ab1d5">
+        <dex dex="/Users/Pepe/AndroidStudioProjects/Camera2Basic/Application/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_f2b8f49caf7bf44f6e4ecada3830f61738667232/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Pepe/AndroidStudioProjects/Camera2Basic/Application/build/intermediates/exploded-aar/com.android.support/support-v13/24.1.1/jars/libs/internal_impl-24.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="ca74722504f90166103d01edcdfdb93192eb1cba">
+        <dex dex="/Users/Pepe/AndroidStudioProjects/Camera2Basic/Application/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.1.1_c5af718849c2b75cf51047d97a01546120e4ce1e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Pepe/AndroidStudioProjects/BackgroundCapture/Application/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="c936c1bd42f0c018c18920c7bec619ef056b24f8">
+        <dex dex="/Users/Pepe/AndroidStudioProjects/BackgroundCapture/Application/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.1.1_c6933d5f688a3d80610d055bbd07897ec6aa95ce/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Pepe/AndroidStudioProjects/Camera2Basic/Application/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/jars/libs/internal_impl-24.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="f78c2f395cb096f9dc1dc07e729922b8fcd3c4f5">
+        <dex dex="/Users/Pepe/AndroidStudioProjects/Camera2Basic/Application/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.1.1_ebd13a4f5279157bcd039c9c96d192d7df3f9408/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Pepe/AndroidStudioProjects/BackgroundCapture/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="1256c10604bb098490eab070d76754ac5ceab35c">
+        <dex dex="/Users/Pepe/AndroidStudioProjects/BackgroundCapture/Application/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.1.1_20ee8dfc8e2389bda7de267558509f2c861059cd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Pepe/AndroidStudioProjects/Camera2Basic/Application/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="7ddf660b714834e5c414a424c00cafa50c358b8c">
+        <dex dex="/Users/Pepe/AndroidStudioProjects/Camera2Basic/Application/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_0e8778f7c1bbd6a5cd60ade26c8c94a50a7e0a0c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Pepe/AndroidStudioProjects/BackgroundCapture/Application/build/intermediates/exploded-aar/com.android.support/support-v13/24.1.1/jars/libs/internal_impl-24.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="ca74722504f90166103d01edcdfdb93192eb1cba">
+        <dex dex="/Users/Pepe/AndroidStudioProjects/BackgroundCapture/Application/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.1.1_45ed1e8d59a4f3c7c0ad5678a84b709f76ac6395/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Pepe/AndroidStudioProjects/Camera2Basic/Application/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="f62e763609f65e47dc6c498760a4accf02776788">
+        <dex dex="/Users/Pepe/AndroidStudioProjects/Camera2Basic/Application/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.1.1_aa05bd18cd4cb5fbcbf9650f34a5543dc9e54072/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Pepe/AndroidStudioProjects/BackgroundCapture/Application/build/intermediates/exploded-aar/com.android.support/support-v13/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="327f68d58bb39fb8b585150596b313541f8fdb87">
+        <dex dex="/Users/Pepe/AndroidStudioProjects/BackgroundCapture/Application/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v13-24.1.1_9bd8f74d5add7af98036862c10b832f5db960894/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Pepe/AndroidStudioProjects/BackgroundCapture/Application/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/jars/libs/internal_impl-24.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="f78c2f395cb096f9dc1dc07e729922b8fcd3c4f5">
+        <dex dex="/Users/Pepe/AndroidStudioProjects/BackgroundCapture/Application/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.1.1_56242d8b79a44a64e586f68b9fa431be325dede3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Pepe/AndroidStudioProjects/Camera2Basic/Application/build/intermediates/exploded-aar/com.android.support/support-v13/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="327f68d58bb39fb8b585150596b313541f8fdb87">
+        <dex dex="/Users/Pepe/AndroidStudioProjects/Camera2Basic/Application/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v13-24.1.1_ac910c5a27f09de78a276dc094a3a47b0216bc01/classes.dex" />
+    </item>
+
+</items>

@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/Pepe/AndroidStudioProjects/BackgroundCapture/Application/build/intermediates/res/merged/debug/drawable-mdpi/ic_action_info.png",
+        "source": "/Users/Pepe/AndroidStudioProjects/BackgroundCapture/Application/src/main/res/drawable-mdpi/ic_action_info.png"
+    },
+    {
+        "merged": "/Users/Pepe/AndroidStudioProjects/BackgroundCapture/Application/build/intermediates/res/merged/debug/drawable-mdpi/ic_launcher.png",
+        "source": "/Users/Pepe/AndroidStudioProjects/BackgroundCapture/Application/src/main/res/drawable-mdpi/ic_launcher.png"
+    }
+]

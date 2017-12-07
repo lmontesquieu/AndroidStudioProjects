@@ -12,32 +12,39 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 
+import net.cleonet.cleo.photofeed_galileo.main.ui.MainActivity;
 import net.cleonet.cleo.photofeed_galileo.PhotoFeedApp;
 import net.cleonet.cleo.photofeed_galileo.R;
 import net.cleonet.cleo.photofeed_galileo.login.LoginPresenter;
-import net.cleonet.cleo.photofeed_galileo.login.LoginPresenterImpl;
 
-import butterknife.Bind;
+import javax.inject.Inject;
+
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class LoginActivity extends AppCompatActivity implements LoginView {
-    @Bind(R.id.btnSignIn)
+
+    private static final String TAG = "LoginActivity";
+
+    @BindView(R.id.btnSignIn)
     Button btnSignIn;
-    @Bind(R.id.btnSignUp)
+    @BindView(R.id.btnSignUp)
     Button btnSignUp;
-    @Bind(R.id.editTxtEmail)
+    @BindView(R.id.editTxtEmail)
     EditText inputEmail;
-    @Bind(R.id.editTxtPassword)
+    @BindView(R.id.editTxtPassword)
     EditText inputPassword;
-    @Bind(R.id.progressBar)
+    @BindView(R.id.progressBar)
     ProgressBar progressBar;
-    @Bind(R.id.layoutMainContainer)
+    @BindView(R.id.layoutMainContainer)
     RelativeLayout container;
 
     private PhotoFeedApp app;
-    private LoginPresenter loginPresenter;
-    private SharedPreferences sharedPreferences;
+    @Inject
+    LoginPresenter loginPresenter;
+    @Inject
+    SharedPreferences sharedPreferences;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,12 +52,16 @@ public class LoginActivity extends AppCompatActivity implements LoginView {
         setContentView(R.layout.activity_login);
         ButterKnife.bind(this);
 
-        Log.d("LoginActivity","onCreate");
+        Log.d(TAG,"onCreate");
 
         app = (PhotoFeedApp)getApplication();
-        loginPresenter = new LoginPresenterImpl(this);
+        setupInjection();
         loginPresenter.onCreate();
         loginPresenter.validateLogin(null, null);
+    }
+
+    private void setupInjection() {
+        app.getLoginComponent(this).inject(this);
     }
 
     @Override
@@ -97,7 +108,9 @@ public class LoginActivity extends AppCompatActivity implements LoginView {
 
     @Override
     public void navigateToMainScreen() {
-        startActivity(new Intent(this, LoginActivity.class));
+        Log.d(TAG,"navigateToMainScreen");
+        //**Aquí debería ser, según tutorial, MainActivity.class
+        startActivity(new Intent(this, MainActivity.class));
     }
 
     @Override

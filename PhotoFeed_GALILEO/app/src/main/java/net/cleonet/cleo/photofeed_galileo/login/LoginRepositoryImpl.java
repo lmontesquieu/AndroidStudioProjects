@@ -1,27 +1,15 @@
 package net.cleonet.cleo.photofeed_galileo.login;
 
-import android.support.annotation.NonNull;
 import android.util.Log;
 
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.ValueEventListener;
 
 import net.cleonet.cleo.photofeed_galileo.domain.FirebaseAPI;
-import net.cleonet.cleo.photofeed_galileo.entities.User;
-import net.cleonet.cleo.photofeed_galileo.lib.GreenRobotEventBus;
+import net.cleonet.cleo.photofeed_galileo.domain.FirebaseActionListenerCallback;
 import net.cleonet.cleo.photofeed_galileo.lib.base.EventBus;
 import net.cleonet.cleo.photofeed_galileo.login.events.LoginEvent;
-//import com.technologies.cleo.cleomove.domain.FirebaseHelper;
-//import com.technologies.cleo.cleomove.entities.User;
-//import com.technologies.cleo.cleomove.lib.EventBus;
-//import com.technologies.cleo.cleomove.lib.GreenRobotEventBus;
-//import com.technologies.cleo.cleomove.login.events.LoginEvent;
 
 /**
  * Created by Pepe on 10/13/2016.
@@ -29,97 +17,102 @@ import net.cleonet.cleo.photofeed_galileo.login.events.LoginEvent;
 
 public class LoginRepositoryImpl implements LoginRepository {
 
-    private FirebaseAPI helper;
+    private static final String TAG = "LoginRepositoryImpl";
+    private EventBus eventBus;
+    private FirebaseAPI firebaseAPI;
     private DatabaseReference mDatabase;
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
-    private static final String TAG = "LoginRepositoryImpl";
 
-    public LoginRepositoryImpl() {
-        Log.d(TAG, "Constructor");
-        this.helper = FirebaseAPI.getInstance();
-        this.mDatabase = helper.getDataReference();
-        this.mAuth = helper.getMyAuth();
-        this.mAuthListener = helper.getMyAuthListener();
+    public LoginRepositoryImpl(EventBus eventBus, FirebaseAPI firebaseAPI) {
+        this.eventBus = eventBus;
+        this.firebaseAPI = firebaseAPI;
+        //this.firebaseAPI = FirebaseAPI.getInstance();
+        this.mDatabase = firebaseAPI.getDataReference();
+        this.mAuth = firebaseAPI.getMyAuth();
+        this.mAuthListener = firebaseAPI.getMyAuthListener();
         this.mAuth.addAuthStateListener(this.mAuthListener);
     }
 
     @Override
-    public void signIn(String email, String password) {
-        mAuth.signInWithEmailAndPassword(email,password)
-                .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                @Override
-                public void onComplete(@NonNull Task<AuthResult> task) {
-                    Log.d(TAG, "signIn:onComplete:" + task.isSuccessful());
-                    if (task.isSuccessful()) {
-                        initSignIn();
-                    } else {
-                        Exception exception = task.getException();
-                        postEvent(LoginEvent.onSignInError, exception.getMessage());
-                    }
-                }
-            });
-    }
-
-    @Override
     public void signUp(final String email, final String password) {
-        mAuth.createUserWithEmailAndPassword(email,password)
-                .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        Log.d(TAG, "signUp:onComplete:" + task.isSuccessful());
-                        if (task.isSuccessful()) {
-                            postEvent(LoginEvent.onSignUpSuccess);
-                            signIn(email, password);
-                        } else {
-                            Exception exception = task.getException();
-                            postEvent(LoginEvent.onSignUpError, exception.getMessage());
-                        }
-                    }
-                });
-    }
-
-    private void initSignIn() {
-        mDatabase = helper.getDataReference();
-        mDatabase.addListenerForSingleValueEvent(new ValueEventListener() {
+        firebaseAPI.signup(email, password, new FirebaseActionListenerCallback() {
             @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                User currentUser = dataSnapshot.getValue(User.class);
-                if (currentUser == null) {
-                    registerNewUser();
-                }
-                helper.changeUserConnectionStatus(User.ONLINE);
-                postEvent(LoginEvent.onSignInSuccess);
+            public void onSuccess() {
+                postEvent(LoginEvent.onSignUpSuccess);
+                signIn(email,password);
             }
 
             @Override
-            public void onCancelled(DatabaseError databaseError) {}
+            public void onError(Exception exception) {
+                postEvent(LoginEvent.onSignUpError, exception.getMessage(), null);
+            }
+
+            @Override
+            public void onDatabaseError(DatabaseError error) {
+                postEvent(LoginEvent.onSignUpError, error.getMessage(), null);
+            }
         });
     }
 
-    private void registerNewUser() {
-        String email = helper.getAuthUserEmail();
-        if (email != null) {
-            User currentUser = new User();
-            currentUser.setEmail(email);
-            mDatabase.setValue(currentUser);
+    @Override
+    public void signIn(final String email, final String password) {
+        if (email != null && password != null) {
+            firebaseAPI.login(email, password, new FirebaseActionListenerCallback() {
+                @Override
+                public void onSuccess() {
+                    String email = firebaseAPI.getAuthUserEmail();
+                    postEvent(LoginEvent.onSignInSuccess, email);
+                }
+
+                @Override
+                public void onError(Exception exception) {
+                    postEvent(LoginEvent.onSignInError, exception.getMessage(), null);
+                }
+
+                @Override
+                public void onDatabaseError(DatabaseError error) {
+                    postEvent(LoginEvent.onSignInError, error.getMessage(), null);
+                }
+            });
+        } else {
+            firebaseAPI.checkSession(new FirebaseActionListenerCallback() {
+                @Override
+                public void onSuccess() {
+                    String email = firebaseAPI.getAuthUserEmail();
+                    postEvent(LoginEvent.onSignInSuccess, email);
+                }
+
+                @Override
+                public void onError(Exception exception) {
+                    postEvent(LoginEvent.onFailedToRecoverSession);
+                }
+
+                @Override
+                public void onDatabaseError(DatabaseError error) {
+                    postEvent(LoginEvent.onFailedToRecoverSession);
+                }
+            });
         }
     }
 
-    private void postEvent(int type, String errorMessage) {
+    private void postEvent(int type, String errorMessage, String currentUserEmail) {
         LoginEvent loginEvent = new LoginEvent();
         loginEvent.setEventType(type);
-        if (errorMessage != null) {
-            Log.d(TAG, errorMessage);
-            loginEvent.setErrorMessage(errorMessage);
-        }
-
-        EventBus eventBus = GreenRobotEventBus.getInstance();
+        //Log.d(TAG, errorMessage);
+        Log.d(TAG,"errorPostEvent");
+        loginEvent.setErrorMessage(errorMessage);
+        loginEvent.setCurrentUserEmail(currentUserEmail);
         eventBus.post(loginEvent);
     }
 
     private void postEvent(int type) {
         Log.d(TAG, String.valueOf(type));
-        postEvent(type, null);
+        postEvent(type, null, null);
+    }
+
+    private void postEvent(int type, String currentUserEmail) {
+        Log.d(TAG, String.valueOf(type));
+        postEvent(type, null, currentUserEmail);
     }
 }

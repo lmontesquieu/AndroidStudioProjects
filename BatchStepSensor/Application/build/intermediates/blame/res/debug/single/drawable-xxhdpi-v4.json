@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\Users\\Pepe\\AndroidStudioProjects\\BatchStepSensor\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_action_cancel.png",
+        "source": "C:\\Users\\Pepe\\AndroidStudioProjects\\BatchStepSensor\\Application\\src\\main\\res\\drawable-xxhdpi\\ic_action_cancel.png"
+    },
+    {
+        "merged": "C:\\Users\\Pepe\\AndroidStudioProjects\\BatchStepSensor\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_launcher.png",
+        "source": "C:\\Users\\Pepe\\AndroidStudioProjects\\BatchStepSensor\\Application\\src\\main\\res\\drawable-xxhdpi\\ic_launcher.png"
+    }
+]

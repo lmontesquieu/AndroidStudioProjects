@@ -35,7 +35,7 @@ public class PhotoFeedAppModule {
 
     @Provides
     @Singleton
-    PhotoFeedApp providesApplication(){
+    Application providesApplication(){
         return this.app;
     }
 }

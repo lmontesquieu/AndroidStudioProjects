@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">TipCalc</string>
+    <string name="main.button.submit">Calculate</string>
+    <string name="main.hint.bill">Total</string>
+    <string name="main.hint.percentage">% Tip</string>
+    <string name="main.button.increase">+</string>
+    <string name="main.button.decrease">-</string>
+    <string name="main.button.clear">Delete recent</string>
+    <string name="main.notice.clear">Recent elements is empty</string>
+    <string name="main.menu.action.about">About</string>
+
+    <string name="global.message.tip">Propina %,.1f</string>
+    <string name="tipdetail.message.bill">Total %,.1f</string>
+</resources>

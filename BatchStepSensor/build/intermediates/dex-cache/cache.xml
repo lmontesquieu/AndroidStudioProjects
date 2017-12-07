@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Pepe\AndroidStudioProjects\BatchStepSensor\Application\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="b61e0da935ad501f1d2b0e5a52c926e12ee6969f">
+        <dex dex="C:\Users\Pepe\AndroidStudioProjects\BatchStepSensor\Application\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_a6e1a53a5e839e2155281aa2520310ea8f7caba0\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Pepe\AndroidStudioProjects\BatchStepSensor\Application\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="87ccba000afec63dd93b081cf37fbf695e32a4c4">
+        <dex dex="C:\Users\Pepe\AndroidStudioProjects\BatchStepSensor\Application\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_6f983c2aadd1511dbf6001bd2dc42d9aacb3b254\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Pepe\AndroidStudioProjects\BatchStepSensor\Application\build\intermediates\exploded-aar\com.android.support\support-v13\23.3.0\jars\libs\internal_impl-23.3.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="8813bdcf7583107c4873150075d17c8072ec50cf">
+        <dex dex="C:\Users\Pepe\AndroidStudioProjects\BatchStepSensor\Application\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.3.0_2c367ee3f6da024b4b4691b8228107d41686e38f\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Pepe\AndroidStudioProjects\BatchStepSensor\Application\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\libs\internal_impl-23.3.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
+        <dex dex="C:\Users\Pepe\AndroidStudioProjects\BatchStepSensor\Application\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.3.0_2438ba1e82575df7588f38f72e2e6112b9559865\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Pepe\AndroidStudioProjects\BatchStepSensor\Application\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
+        <dex dex="C:\Users\Pepe\AndroidStudioProjects\BatchStepSensor\Application\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.3.0_54fa32bc2a1f4c9a4b5c8edba1d447c37c3f32f7\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Pepe\AndroidStudioProjects\BatchStepSensor\Application\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="82ce13fd19cdfde0e392f03c27edeba8d4333648">
+        <dex dex="C:\Users\Pepe\AndroidStudioProjects\BatchStepSensor\Application\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-23.3.0_4e9346dd3cf06d12760e9d9ea82da49e981c13f7\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Pepe\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.3.0\support-annotations-23.3.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
+        <dex dex="C:\Users\Pepe\AndroidStudioProjects\BatchStepSensor\Application\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.3.0_b545e002326a3f9c4f0d9c41c3802736b2123aee\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Pepe\AndroidStudioProjects\BatchStepSensor\Application\build\intermediates\exploded-aar\com.android.support\support-v13\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="a809555a2599054c3dcd1bf82b089315ac3a11df">
+        <dex dex="C:\Users\Pepe\AndroidStudioProjects\BatchStepSensor\Application\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v13-23.3.0_0a5c4b24935e3a355ac88f6d5f8cbb6f2315f43d\classes.dex" />
+    </item>
+
+</items>

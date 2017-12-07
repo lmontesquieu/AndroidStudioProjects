@@ -8,9 +8,9 @@ public class LoginInteractorImpl implements LoginInteractor {
 
     private LoginRepository loginRepository;
 
-    public LoginInteractorImpl() {
+    public LoginInteractorImpl(LoginRepository loginRepository) {
         //Log.d(TAG,"Constructor");
-        this.loginRepository = new LoginRepositoryImpl();
+        this.loginRepository = loginRepository;
     }
 
     @Override

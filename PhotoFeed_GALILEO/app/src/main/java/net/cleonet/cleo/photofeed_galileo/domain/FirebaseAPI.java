@@ -1,10 +1,5 @@
 package net.cleonet.cleo.photofeed_galileo.domain;
 
-//import com.firebase.client.ChildEventListener;
-//import com.firebase.client.DataSnapshot;
-//import com.firebase.client.Firebase;
-//import com.firebase.client.FirebaseError;
-//import com.firebase.client.ValueEventListener;
 import android.support.annotation.NonNull;
 import android.util.Log;
 
@@ -35,7 +30,7 @@ public class FirebaseAPI {
     //private Firebase firebase;
     private ChildEventListener photosEventListener;
 
-    private static final String TAG = "FirebaseHelper";
+    private static final String TAG = "FirebaseAPI";
     private DatabaseReference mDatabase;
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
@@ -44,19 +39,21 @@ public class FirebaseAPI {
     private final static String USERS_PATH = "users";
     private final static String CONTACTS_PATH = "contacts";
 
-    private static class SingletonHolder {
-        private static final FirebaseAPI INSTANCE = new FirebaseAPI();
-    }
+    //private static class SingletonHolder {
+    //    private static final FirebaseAPI INSTANCE = new FirebaseAPI();
+    //}
 
-    public static FirebaseAPI getInstance() {
-        //Log.d(TAG, "getInstance");
-        return SingletonHolder.INSTANCE;
-    }
+    //public static FirebaseAPI getInstance() {
+    //    Log.d(TAG, "getInstance");
+        //return SingletonHolder.INSTANCE;
+    //}
 
-    public FirebaseAPI() {
-        //Log.d(TAG,"FirebaseHelper");
-        this.mDatabase = FirebaseDatabase.getInstance().getReference();
-        this.mAuth = FirebaseAuth.getInstance();
+    public FirebaseAPI(FirebaseAuth mAuth, DatabaseReference mDatabase) {
+        Log.d(TAG,"Constructor");
+        this.mAuth = mAuth;
+        this.mDatabase = mDatabase;
+        //this.mDatabase = FirebaseDatabase.getInstance().getReference();
+        //this.mAuth = FirebaseAuth.getInstance();
 
         this.mAuthListener = new FirebaseAuth.AuthStateListener() {
             @Override
@@ -86,53 +83,60 @@ public class FirebaseAPI {
     }
 
     public void checkForData(final FirebaseActionListenerCallback listenerCallback) {
+        Log.d(TAG,"checkForData");
         mDatabase.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 if (dataSnapshot.getChildrenCount() > 0) {
                     listenerCallback.onSuccess();
                 } else {
-                    listenerCallback.onError(null);
+                    listenerCallback.onDatabaseError(null);
                 }
             }
 
             @Override
             public void onCancelled(DatabaseError databaseError) {
-                //listenerCallback.onError(databaseError);
-                postError();
+                listenerCallback.onDatabaseError(databaseError);
+                //postError();
             }
         });
     }
 
-    public void subscribe() {
+    public void subscribe(final FirebaseEventListenerCallback eventListenerCallback) {
+        Log.d(TAG,"subscribe");
         if (photosEventListener == null) {
+            Log.d(TAG,"photosEventListener == null");
             photosEventListener = new ChildEventListener() {
                 @Override
                 public void onChildAdded(DataSnapshot dataSnapshot, String s) {
-                    //listenerCallback.onChildAdded(dataSnapshot);
+                    eventListenerCallback.onChildAdded(dataSnapshot);
                     Log.d(TAG, "onChildAdded");
                 }
 
                 @Override
                 public void onChildChanged(DataSnapshot dataSnapshot, String s) {
+                    Log.d(TAG, "onChildChanged");
                 }
 
                 @Override
                 public void onChildRemoved(DataSnapshot dataSnapshot) {
-                    //listenerCallback.onChildRemoved(dataSnapshot);
+                    eventListenerCallback.onChildRemoved(dataSnapshot);
                     Log.d(TAG, "onChildRemoved");
                 }
 
                 @Override
                 public void onChildMoved(DataSnapshot dataSnapshot, String s) {
+                    Log.d(TAG, "onChildMoved");
                 }
 
                 @Override
                 public void onCancelled(DatabaseError databaseError) {
-                    //listenerCallback.onCancelled(firebaseError);
-                    postError();
+                    Log.d(TAG, "onCancelled");
+                    eventListenerCallback.onCancelled(databaseError);
+                    //postError();
                 }
             };
+            Log.d(TAG, "Adding ChildEventListener");
             mDatabase.addChildEventListener(photosEventListener);
         }
     }
@@ -159,11 +163,12 @@ public class FirebaseAPI {
     public String getAuthUserEmail() {
         //Log.d(TAG, "getAuthUserEmail");
         String email = null;
-        FirebaseUser authUser = FirebaseAuth.getInstance().getCurrentUser();
+        //FirebaseUser authUser = FirebaseAuth.getInstance().getCurrentUser();
+        FirebaseUser authUser = mAuth.getCurrentUser();
         if (authUser != null) {
             email = authUser.getEmail();
         }
-        //Log.d(TAG, email);
+        Log.d(TAG, email);
         return email;
     }
 
@@ -171,38 +176,55 @@ public class FirebaseAPI {
         mAuth.signOut();
     }
 
-    public void login(String email, String password) {
+    public void login(String email, String password, final FirebaseActionListenerCallback listenerCallback) {
         mAuth.signInWithEmailAndPassword(email,password)
                 .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         Log.d(TAG, "signIn:onComplete:" + task.isSuccessful());
                         if (task.isSuccessful()) {
-                            initSignIn();
+                            //initSignIn();
+                            listenerCallback.onSuccess();
                         } else {
                             Exception exception = task.getException();
-                            //postEvent(LoginEvent.onSignInError, exception.getMessage());
+                            listenerCallback.onError(exception);
                         }
                     }
                 });
     }
 
-    private void initSignIn() {
-        //mDatabase = helper.getDataReference();
-        mDatabase.addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                /*User currentUser = dataSnapshot.getValue(User.class);*/
-                //if (currentUser == null) {
-                //    registerNewUser();
-                //}
-                /*helper.changeUserConnectionStatus(User.ONLINE);
-                postEvent(LoginEvent.onSignInSuccess);*/
-            }
+//    private void initSignIn() {
+//        //mDatabase = helper.getDataReference();
+//        mDatabase.addListenerForSingleValueEvent(new ValueEventListener() {
+//            @Override
+//            public void onDataChange(DataSnapshot dataSnapshot) {
+//                /*User currentUser = dataSnapshot.getValue(User.class);*/
+//                //if (currentUser == null) {
+//                //    registerNewUser();
+//                //}
+//                /*helper.changeUserConnectionStatus(User.ONLINE);
+//                postEvent(LoginEvent.onSignInSuccess);*/
+//            }
+//
+//            @Override
+//            public void onCancelled(DatabaseError databaseError) {}
+//        });
+//    }
 
-            @Override
-            public void onCancelled(DatabaseError databaseError) {}
-        });
+    public void signup(String email, String password, final FirebaseActionListenerCallback listenerCallback) {
+        mAuth.createUserWithEmailAndPassword(email,password)
+                .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        Log.d(TAG, "signUp:onComplete:" + task.isSuccessful());
+                        if (task.isSuccessful()) {
+                            listenerCallback.onSuccess();
+                        } else {
+                            Exception exception = task.getException();
+                            listenerCallback.onError(exception);
+                        }
+                    }
+                });
     }
 
     /*private void registerNewUser() {
@@ -214,11 +236,13 @@ public class FirebaseAPI {
         }
     }*/
 
-    public void checkSession() {
+    public void checkSession(FirebaseActionListenerCallback listenerCallback) {
         if (mAuth.getCurrentUser() != null) {
-            initSignIn();
+            //initSignIn();
+            listenerCallback.onSuccess();
         } else {
             //postEvent(LoginEvent.onFailedToRecoverSession);
+            listenerCallback.onError(null);
         }
     }
 

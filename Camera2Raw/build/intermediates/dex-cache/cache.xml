@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Pepe\AndroidStudioProjects\Camera2Raw\Application\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="4fcf0b1879f8caf497c073e1432d398e9e2988c1">
+        <dex dex="C:\Users\Pepe\AndroidStudioProjects\Camera2Raw\Application\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.0.0_f005e2487fddaa8efb3dde5e42d76015a47bc5b0\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Pepe\AndroidStudioProjects\Camera2Raw\Application\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\libs\internal_impl-23.3.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
+        <dex dex="C:\Users\Pepe\AndroidStudioProjects\Camera2Raw\Application\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.3.0_5329aff55880420321f54a34ea0db240a4ee3fca\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Pepe\AndroidStudioProjects\Camera2Raw\Application\build\intermediates\exploded-aar\com.android.support\support-v13\23.3.0\jars\libs\internal_impl-23.3.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="8813bdcf7583107c4873150075d17c8072ec50cf">
+        <dex dex="C:\Users\Pepe\AndroidStudioProjects\Camera2Raw\Application\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.3.0_67130998f8dab8afebb9dd5e1725047c4da49ef6\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Pepe\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.3.0\support-annotations-23.3.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
+        <dex dex="C:\Users\Pepe\AndroidStudioProjects\Camera2Raw\Application\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.3.0_b545e002326a3f9c4f0d9c41c3802736b2123aee\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Pepe\AndroidStudioProjects\Camera2Raw\Application\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="5afdd3bb08ad3225b4b5188a7bbece1780b8baf6">
+        <dex dex="C:\Users\Pepe\AndroidStudioProjects\Camera2Raw\Application\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_1ad3350e892ce5b0814246d8302b06ad5a5ebedc\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Pepe\AndroidStudioProjects\Camera2Raw\Application\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="82ce13fd19cdfde0e392f03c27edeba8d4333648">
+        <dex dex="C:\Users\Pepe\AndroidStudioProjects\Camera2Raw\Application\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-23.3.0_be822ae231d7e2a91c0970022841483be8d5963e\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Pepe\AndroidStudioProjects\Camera2Raw\Application\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="15c586875d1cc1aeab3c9c1ee5c35b570c504da7">
+        <dex dex="C:\Users\Pepe\AndroidStudioProjects\Camera2Raw\Application\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_5a73b926aa2c472434ddca0690761a21c576affb\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Pepe\AndroidStudioProjects\Camera2Raw\Application\build\intermediates\exploded-aar\com.android.support\support-v13\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="a809555a2599054c3dcd1bf82b089315ac3a11df">
+        <dex dex="C:\Users\Pepe\AndroidStudioProjects\Camera2Raw\Application\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v13-23.3.0_f9077de5cb28ec36f8a89a6ba835d1fe09516d3d\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Pepe\AndroidStudioProjects\Camera2Raw\Application\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
+        <dex dex="C:\Users\Pepe\AndroidStudioProjects\Camera2Raw\Application\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.3.0_49072d4033d1a9a404713ee37b3b3a11d3bbbadb\classes.dex" />
+    </item>
+
+</items>

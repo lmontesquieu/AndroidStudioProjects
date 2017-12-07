@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/Pepe/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.1.1/support-annotations-24.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3af19f153122737b372622fa6c81dd11a1c6b999">
+        <dex dex="/Users/Pepe/AndroidStudioProjects/Camera2Basic/Application/build/intermediates/pre-dexed/debug/support-annotations-24.1.1_e4e27722a12ea6cc1e753fb55181fb1838e4b747.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Pepe/.android/build-cache/cf8d2a4928698f30d3cc5ab4d4dab8c6e6f9dde3/output/jars/libs/internal_impl-24.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ca74722504f90166103d01edcdfdb93192eb1cba">
+        <dex dex="/Users/Pepe/AndroidStudioProjects/Camera2Basic/Application/build/intermediates/pre-dexed/debug/internal_impl-24.1.1_21fb7a3e1b92339f65e4be18447548c97ea3cdbb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Pepe/.android/build-cache/0e77ed878c45cf5f9548172de68a62530d78a06f/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1256c10604bb098490eab070d76754ac5ceab35c">
+        <dex dex="/Users/Pepe/AndroidStudioProjects/Camera2Basic/Application/build/intermediates/pre-dexed/debug/classes_5568959bba80220e7afa16552bf9e8e229f18040.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Pepe/.android/build-cache/363e7946c44f7f9671b0b2c359d3fae177361d6e/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4add8aa95c9f4e9a2ad64b7e2bf08e97e28955c1">
+        <dex dex="/Users/Pepe/AndroidStudioProjects/Camera2Basic/Application/build/intermediates/pre-dexed/debug/classes_03f4af1acfeb4613aca8367412ccad795c7287a7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Pepe/.android/build-cache/04f1f0ad2a01a052702a7119339aa9a3f55496d3/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6d7d803871e3203465f71a163e7af104f807b446">
+        <dex dex="/Users/Pepe/AndroidStudioProjects/Camera2Basic/Application/build/intermediates/pre-dexed/debug/classes_15eb2953b470b1b11ddeb786e42a80b3ba184ac5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Pepe/.android/build-cache/ccddc0ee2d51ff124860cae05cfa0476e600a0a7/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f62e763609f65e47dc6c498760a4accf02776788">
+        <dex dex="/Users/Pepe/AndroidStudioProjects/Camera2Basic/Application/build/intermediates/pre-dexed/debug/classes_e5d656c54fba1bda2f94ace8672983e9bf2b7552.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Pepe/.android/build-cache/cf8d2a4928698f30d3cc5ab4d4dab8c6e6f9dde3/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="327f68d58bb39fb8b585150596b313541f8fdb87">
+        <dex dex="/Users/Pepe/AndroidStudioProjects/Camera2Basic/Application/build/intermediates/pre-dexed/debug/classes_6977a3a2aa0994019bf1961efeb721272d5b7394.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Pepe/.android/build-cache/92d1179efed12a221f0270c16072d87a06920972/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c936c1bd42f0c018c18920c7bec619ef056b24f8">
+        <dex dex="/Users/Pepe/AndroidStudioProjects/Camera2Basic/Application/build/intermediates/pre-dexed/debug/classes_96c537c52907c5a092830f1dce812cc40a3077cf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Pepe/.android/build-cache/04f1f0ad2a01a052702a7119339aa9a3f55496d3/output/jars/libs/internal_impl-24.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f78c2f395cb096f9dc1dc07e729922b8fcd3c4f5">
+        <dex dex="/Users/Pepe/AndroidStudioProjects/Camera2Basic/Application/build/intermediates/pre-dexed/debug/internal_impl-24.1.1_43a2e9a3b4fc904720fb9ff324623d5480b7cf44.jar" />
+    </item>
+
+</items>

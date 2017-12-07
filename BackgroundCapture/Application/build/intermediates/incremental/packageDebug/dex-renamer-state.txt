@@ -1,0 +1,7 @@
+#Thu Nov 03 14:47:20 EDT 2016
+base.0=/Users/Pepe/AndroidStudioProjects/BackgroundCapture/Application/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_ae2b6a8f1ad5b58955972fdbf63a81963215ff12
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=/Users/Pepe/AndroidStudioProjects/BackgroundCapture/Application/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_a434efece9900f290b2df34f37d6892fe22c5efd/classes.dex
+base.1=/Users/Pepe/AndroidStudioProjects/BackgroundCapture/Application/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_a434efece9900f290b2df34f37d6892fe22c5efd
+file.0=/Users/Pepe/AndroidStudioProjects/BackgroundCapture/Application/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_ae2b6a8f1ad5b58955972fdbf63a81963215ff12/classes.dex

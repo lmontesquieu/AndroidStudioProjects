@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/Pepe/AndroidStudioProjects/Camera2Basic_base/Application/build/intermediates/res/merged/debug/layout-v21/notification_action_tombstone.xml",
+        "source": "/Users/Pepe/.android/build-cache/3a22c1a6160014bdfb457fb31212c23550c99efa/output/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/Users/Pepe/AndroidStudioProjects/Camera2Basic_base/Application/build/intermediates/res/merged/debug/layout-v21/notification_template_icon_group.xml",
+        "source": "/Users/Pepe/.android/build-cache/3a22c1a6160014bdfb457fb31212c23550c99efa/output/res/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/Users/Pepe/AndroidStudioProjects/Camera2Basic_base/Application/build/intermediates/res/merged/debug/layout-v21/notification_template_custom_big.xml",
+        "source": "/Users/Pepe/.android/build-cache/3a22c1a6160014bdfb457fb31212c23550c99efa/output/res/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/Users/Pepe/AndroidStudioProjects/Camera2Basic_base/Application/build/intermediates/res/merged/debug/layout-v21/notification_action.xml",
+        "source": "/Users/Pepe/.android/build-cache/3a22c1a6160014bdfb457fb31212c23550c99efa/output/res/layout-v21/notification_action.xml"
+    }
+]

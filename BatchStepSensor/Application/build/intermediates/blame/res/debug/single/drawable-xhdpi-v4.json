@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "C:\\Users\\Pepe\\AndroidStudioProjects\\BatchStepSensor\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_cardaction_neutral.png",
+        "source": "C:\\Users\\Pepe\\AndroidStudioProjects\\BatchStepSensor\\Application\\src\\main\\res\\drawable-xhdpi\\ic_cardaction_neutral.png"
+    },
+    {
+        "merged": "C:\\Users\\Pepe\\AndroidStudioProjects\\BatchStepSensor\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_launcher.png",
+        "source": "C:\\Users\\Pepe\\AndroidStudioProjects\\BatchStepSensor\\Application\\src\\main\\res\\drawable-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Pepe\\AndroidStudioProjects\\BatchStepSensor\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\card_bg.9.png",
+        "source": "C:\\Users\\Pepe\\AndroidStudioProjects\\BatchStepSensor\\Application\\src\\main\\res\\drawable-xhdpi\\card_bg.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Pepe\\AndroidStudioProjects\\BatchStepSensor\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_cardaction_negative.png",
+        "source": "C:\\Users\\Pepe\\AndroidStudioProjects\\BatchStepSensor\\Application\\src\\main\\res\\drawable-xhdpi\\ic_cardaction_negative.png"
+    },
+    {
+        "merged": "C:\\Users\\Pepe\\AndroidStudioProjects\\BatchStepSensor\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_cardaction_positive.png",
+        "source": "C:\\Users\\Pepe\\AndroidStudioProjects\\BatchStepSensor\\Application\\src\\main\\res\\drawable-xhdpi\\ic_cardaction_positive.png"
+    },
+    {
+        "merged": "C:\\Users\\Pepe\\AndroidStudioProjects\\BatchStepSensor\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_cardaction_negative_pressed.png",
+        "source": "C:\\Users\\Pepe\\AndroidStudioProjects\\BatchStepSensor\\Application\\src\\main\\res\\drawable-xhdpi\\ic_cardaction_negative_pressed.png"
+    },
+    {
+        "merged": "C:\\Users\\Pepe\\AndroidStudioProjects\\BatchStepSensor\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_cardaction_neutral_pressed.png",
+        "source": "C:\\Users\\Pepe\\AndroidStudioProjects\\BatchStepSensor\\Application\\src\\main\\res\\drawable-xhdpi\\ic_cardaction_neutral_pressed.png"
+    },
+    {
+        "merged": "C:\\Users\\Pepe\\AndroidStudioProjects\\BatchStepSensor\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_cardaction_positive_pressed.png",
+        "source": "C:\\Users\\Pepe\\AndroidStudioProjects\\BatchStepSensor\\Application\\src\\main\\res\\drawable-xhdpi\\ic_cardaction_positive_pressed.png"
+    }
+]

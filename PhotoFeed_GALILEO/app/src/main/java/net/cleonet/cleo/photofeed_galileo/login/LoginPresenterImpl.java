@@ -2,7 +2,6 @@ package net.cleonet.cleo.photofeed_galileo.login;
 
 import android.util.Log;
 
-import net.cleonet.cleo.photofeed_galileo.lib.GreenRobotEventBus;
 import net.cleonet.cleo.photofeed_galileo.lib.base.EventBus;
 import net.cleonet.cleo.photofeed_galileo.login.events.LoginEvent;
 import net.cleonet.cleo.photofeed_galileo.login.ui.LoginView;
@@ -20,11 +19,10 @@ public class LoginPresenterImpl implements LoginPresenter {
     private LoginView loginView;
     private LoginInteractor loginInteractor;
 
-    public LoginPresenterImpl(LoginView loginView) {
-        Log.d(TAG,"LoginPresenterImpl");
+    public LoginPresenterImpl(EventBus eventBus, LoginView loginView, LoginInteractor loginInteractor) {
+        this.eventBus = eventBus;
         this.loginView = loginView;
-        this.loginInteractor = new LoginInteractorImpl();
-        this.eventBus = GreenRobotEventBus.getInstance();
+        this.loginInteractor = loginInteractor;
     }
 
     @Override
@@ -63,7 +61,7 @@ public class LoginPresenterImpl implements LoginPresenter {
         Log.d(TAG,"onEventMainThread");
         switch (event.getEventType()) {
             case LoginEvent.onSignInSuccess:
-                onSignInSuccess();
+                onSignInSuccess(event.getCurrentUserEmail());
                 break;
             case LoginEvent.onSignUpSuccess:
                 onSignUpSuccess();
@@ -87,9 +85,10 @@ public class LoginPresenterImpl implements LoginPresenter {
         }
     }
 
-    private void onSignInSuccess() {
-        Log.d(TAG,"onSignInSuccess");
+    private void onSignInSuccess(String email) {
+        Log.d(TAG,"onSignInSuccess!");
         if (loginView != null) {
+            loginView.setUserEmail(email);
             loginView.navigateToMainScreen();
         }
     }

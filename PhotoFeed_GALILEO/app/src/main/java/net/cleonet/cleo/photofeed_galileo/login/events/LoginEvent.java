@@ -11,6 +11,10 @@ public class LoginEvent {
     public final static int onSignUpSuccess = 3;
     public final static int onFailedToRecoverSession = 4;
 
+    private int eventType;
+    private String errorMessage;
+    private String currentUserEmail ;
+
     public int getEventType() {
         return eventType;
     }
@@ -27,6 +31,11 @@ public class LoginEvent {
         this.errorMessage = errorMessage;
     }
 
-    private int eventType;
-    private String errorMessage;
+    public String getCurrentUserEmail() {
+        return currentUserEmail;
+    }
+
+    public void setCurrentUserEmail(String currentUserEmail) {
+        this.currentUserEmail = currentUserEmail;
+    }
 }

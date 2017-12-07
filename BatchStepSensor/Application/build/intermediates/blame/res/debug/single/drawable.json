@@ -1,0 +1,46 @@
+[
+    {
+        "merged": "C:\\Users\\Pepe\\AndroidStudioProjects\\BatchStepSensor\\Application\\build\\intermediates\\res\\merged\\debug\\drawable\\card_action_icon_negative.xml",
+        "source": "C:\\Users\\Pepe\\AndroidStudioProjects\\BatchStepSensor\\Application\\src\\main\\res\\drawable\\card_action_icon_negative.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pepe\\AndroidStudioProjects\\BatchStepSensor\\Application\\build\\intermediates\\res\\merged\\debug\\drawable\\card_action_bg.xml",
+        "source": "C:\\Users\\Pepe\\AndroidStudioProjects\\BatchStepSensor\\Application\\src\\main\\res\\drawable\\card_action_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pepe\\AndroidStudioProjects\\BatchStepSensor\\Application\\build\\intermediates\\res\\merged\\debug\\drawable\\card_action_text_positive.xml",
+        "source": "C:\\Users\\Pepe\\AndroidStudioProjects\\BatchStepSensor\\Application\\src\\main\\res\\drawable\\card_action_text_positive.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pepe\\AndroidStudioProjects\\BatchStepSensor\\Application\\build\\intermediates\\res\\merged\\debug\\drawable\\card_action_bg_negative.xml",
+        "source": "C:\\Users\\Pepe\\AndroidStudioProjects\\BatchStepSensor\\Application\\src\\main\\res\\drawable\\card_action_bg_negative.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pepe\\AndroidStudioProjects\\BatchStepSensor\\Application\\build\\intermediates\\res\\merged\\debug\\drawable\\card_action_text.xml",
+        "source": "C:\\Users\\Pepe\\AndroidStudioProjects\\BatchStepSensor\\Application\\src\\main\\res\\drawable\\card_action_text.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pepe\\AndroidStudioProjects\\BatchStepSensor\\Application\\build\\intermediates\\res\\merged\\debug\\drawable\\card_overlay_focused.xml",
+        "source": "C:\\Users\\Pepe\\AndroidStudioProjects\\BatchStepSensor\\Application\\src\\main\\res\\drawable\\card_overlay_focused.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pepe\\AndroidStudioProjects\\BatchStepSensor\\Application\\build\\intermediates\\res\\merged\\debug\\drawable\\card_action_bg_positive.xml",
+        "source": "C:\\Users\\Pepe\\AndroidStudioProjects\\BatchStepSensor\\Application\\src\\main\\res\\drawable\\card_action_bg_positive.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pepe\\AndroidStudioProjects\\BatchStepSensor\\Application\\build\\intermediates\\res\\merged\\debug\\drawable\\card_action_text_negative.xml",
+        "source": "C:\\Users\\Pepe\\AndroidStudioProjects\\BatchStepSensor\\Application\\src\\main\\res\\drawable\\card_action_text_negative.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pepe\\AndroidStudioProjects\\BatchStepSensor\\Application\\build\\intermediates\\res\\merged\\debug\\drawable\\card_action_icon_neutral.xml",
+        "source": "C:\\Users\\Pepe\\AndroidStudioProjects\\BatchStepSensor\\Application\\src\\main\\res\\drawable\\card_action_icon_neutral.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pepe\\AndroidStudioProjects\\BatchStepSensor\\Application\\build\\intermediates\\res\\merged\\debug\\drawable\\card_action_icon_positive.xml",
+        "source": "C:\\Users\\Pepe\\AndroidStudioProjects\\BatchStepSensor\\Application\\src\\main\\res\\drawable\\card_action_icon_positive.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pepe\\AndroidStudioProjects\\BatchStepSensor\\Application\\build\\intermediates\\res\\merged\\debug\\drawable\\card_separator.xml",
+        "source": "C:\\Users\\Pepe\\AndroidStudioProjects\\BatchStepSensor\\Application\\src\\main\\res\\drawable\\card_separator.xml"
+    }
+]
